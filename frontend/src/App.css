@@ -1,0 +1,28 @@
+/* ===================================
+   APP.CSS - LORENZO DESIGN SYSTEM
+   Bitcoin Price Tracker
+   =================================== */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--lorenzo-dark);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+/* Smooth rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure proper stacking context */
+.App > * {
+  position: relative;
+}
